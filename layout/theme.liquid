@@ -103,6 +103,7 @@
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
   {% include 'booster-common' %}
+{% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
 </head>
 
   <body>
